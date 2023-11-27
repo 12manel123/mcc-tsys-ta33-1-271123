@@ -1,4 +1,6 @@
 //Ex1
+var frecuenciaSumas = new Array(13).fill(0);
+
 function lanzarDado() {
     return Math.floor(Math.random() * 6) + 1;
 }
@@ -7,8 +9,21 @@ function lanzarDados() {
     var dado1 = lanzarDado();
     var dado2 = lanzarDado();
     var suma = dado1 + dado2;
-    document.getElementById("resultado").innerText = suma;
+    frecuenciaSumas[suma]++;
+    console.log("Dado 1: " + dado1 + ", Dado 2: " + dado2 + ", Suma: " + suma);
+    document.getElementById("resultado").innerText = "Suma: " + suma;
 }
+
+for (var i = 0; i < 36000; i++) {
+    lanzarDados();
+}
+
+console.log("Frecuencia de cada suma:");
+for (var j = 2; j <= 12; j++) {
+    console.log("Suma " + j + ": " + frecuenciaSumas[j]);
+}
+
+
 //Ex2
 function ejercicio2() {
     var fechaRegex = /\b\d{2}\/\d{2}\/\d{4}\b/;
