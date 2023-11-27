@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<title>El primer script</title>
+<script type="text/javascript" src="/js/codigo.js"></script> 
+<link rel="stylesheet" href="/css/ex4.css">
+<link rel="stylesheet" href="css/ex5.css">
+
+</head>
+<body>
+<h1>Ex1</h1>
+<p><button onclick="lanzarDados()">Lanzar Dados</button> Resultado del lanzamiento: <span id="resultado"></span></p>
+<hr><h1>Ex2</h1>
+<p><button onclick="ejercicio2()">Ejecutar en terminal</button></p>
+<hr><h1>Ex3</h1>
+<p id="parrafo1">Este es un párrafo.</p>
+<table>
+    <tr>
+    <td>
+        <p id="parrafo2">Párrafo en la primera tabla.</p>
+    </td>
+    <td>
+        <p id="parrafo3">Párrafo en la primera tabla.</p>
+    </td>
+    </tr>
+</table>
+<table>
+    <tr>
+    <td>
+        <p id="parrafo4">Párrafo en la segunda tabla.</p>
+    </td>
+    <td>
+        <p id="parrafo5">Párrafo en la segunda tabla.</p>
+    </td>
+    </tr>
+</table>
+<script src="./js/parrafo.js"></script>
+<hr><h1>Ex4</h1>
+<div id="calculadora">
+    <div id="pantalla"></div>
+    <button onclick="borrarEntrada()" class="operacion">Retr</button>
+    <button onclick="borrarUltimo()" class="operacion">CE</button>
+    <button onclick="limpiarPantalla()" class="operacion">C</button>
+    <button onclick="agregarCaracter('/')" class="operacion">/</button>
+    <button onclick="calcularRaiz()" class="operacion">Raiz</button>
+    <button onclick="agregarCaracter('7')">7</button>
+    <button onclick="agregarCaracter('8')">8</button>
+    <button onclick="agregarCaracter('9')">9</button>
+    <button onclick="agregarCaracter('*')" class="operacion">*</button>
+    <button onclick="calcularPorcentaje()" class="operacion">%</button>
+    <button onclick="agregarCaracter('4')">4</button>
+    <button onclick="agregarCaracter('5')">5</button>
+    <button onclick="agregarCaracter('6')">6</button>
+    <button onclick="agregarCaracter('-')" class="operacion">-</button>
+    <button onclick="calcularInverso()" class="operacion">1/x</button>
+    <button onclick="agregarCaracter('1')">1</button>
+    <button onclick="agregarCaracter('2')">2</button>
+    <button onclick="agregarCaracter('3')">3</button>
+    <button onclick="agregarCaracter('+')" class="operacion">+</button>
+    <button onclick="cambiarSigno()" class="operacion">+/-</button>
+    <button onclick="agregarCaracter('0')">0</button>
+    <button onclick="agregarCaracter('.')">.</button>
+    <button onclick="calcular()" class="igual">=</button>
+</div>
+<script src="./js/calculadora.js"></script>
+
+<hr><h1>Ex5</h1>
+<div class="contenedor">
+    <div class="miniaturas" id="miniaturas">
+        <img src="img/foto1.jpg" alt="Imagen 1" onclick="cambiarImagen(this)">
+        <img src="img/foto2.jpg" alt="Imagen 2" onclick="cambiarImagen(this)">
+        <img src="img/foto3.jpg" alt="Imagen 3" onclick="cambiarImagen(this)">
+        <img src="img/foto4.jpg" alt="Imagen 4" onclick="cambiarImagen(this)">
+        <img src="img/foto5.jpg" alt="Imagen 5" onclick="cambiarImagen(this)">
+        <img src="img/foto6.jpg" alt="Imagen 6" onclick="cambiarImagen(this)">
+        <img src="img/foto7.jpg" alt="Imagen 7" onclick="cambiarImagen(this)">
+        <img src="img/foto8.jpg" alt="Imagen 8" onclick="cambiarImagen(this)">
+    </div>
+    <div class="visor" id="visor">
+        <img src="img/foto1.jpg" alt="Imagen 1" id="imagenGrande">
+        <p id="pie">Pie de foto</p>
+    </div>
+</div>
+<script src="./js/codigo.js"></script>
+<hr><h1>Ex6</h1>
+<h3>Reloj con javascript</h3>
+<div class="reloj" id="reloj">
+    <span id="horas">00</span> :
+    <span id="minutos">00</span> :
+    <span id="segundos">00</span>
+</div>
+</body> 
+</html>

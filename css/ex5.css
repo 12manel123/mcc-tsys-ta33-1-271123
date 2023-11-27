@@ -1,0 +1,32 @@
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.miniaturas {
+    display: flex;
+    flex-direction: column;
+}
+
+.miniaturas img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.visor {
+    flex: 1;
+    margin-left: 20px;
+}
+
+#imagenGrande {
+    width: 100%;
+    height: auto;
+}
+
+#pie {
+    margin-top: 10px;
+    text-align: center;
+}
