@@ -16,16 +16,15 @@ function lanzarDados() {
         document.getElementById("resultado").innerText = "Suma: " + suma;
     });
 }
-document.addEventListener("DOMContentLoaded", function () {
-    for (var i = 0; i < 30; i++) {
-        lanzarDados();
-    }
+for (var i = 0; i < 2600; i++) {
+    lanzarDados();
+}
+console.log("Frecuencia de cada suma:");
+for (var j = 2; j <= 12; j++) {
+    
+    console.log("Suma " + j + ": " + frecuenciaSumas[j]);
+}
 
-    console.log("Frecuencia de cada suma:");
-    for (var j = 2; j <= 12; j++) {
-        console.log("Suma " + j + ": " + frecuenciaSumas[j]);
-    }
-});
 
 
 
