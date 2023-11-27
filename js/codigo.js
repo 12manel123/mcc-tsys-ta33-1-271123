@@ -11,17 +11,22 @@ function lanzarDados() {
     var suma = dado1 + dado2;
     frecuenciaSumas[suma]++;
     console.log("Dado 1: " + dado1 + ", Dado 2: " + dado2 + ", Suma: " + suma);
-    document.getElementById("resultado").innerText = "Suma: " + suma;
-}
 
-for (var i = 0; i < 36000; i++) {
-    lanzarDados();
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("resultado").innerText = "Suma: " + suma;
+    });
 }
+document.addEventListener("DOMContentLoaded", function () {
+    for (var i = 0; i < 36000; i++) {
+        lanzarDados();
+    }
 
-console.log("Frecuencia de cada suma:");
-for (var j = 2; j <= 12; j++) {
-    console.log("Suma " + j + ": " + frecuenciaSumas[j]);
-}
+    console.log("Frecuencia de cada suma:");
+    for (var j = 2; j <= 12; j++) {
+        console.log("Suma " + j + ": " + frecuenciaSumas[j]);
+    }
+});
+
 
 
 //Ex2
