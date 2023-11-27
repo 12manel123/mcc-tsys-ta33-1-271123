@@ -17,7 +17,7 @@ function lanzarDados() {
     });
 }
 document.addEventListener("DOMContentLoaded", function () {
-    for (var i = 0; i < 36000; i++) {
+    for (var i = 0; i < 30; i++) {
         lanzarDados();
     }
 
